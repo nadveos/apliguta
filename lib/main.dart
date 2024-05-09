@@ -10,23 +10,39 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tStyle = Theme.of(context).textTheme;
     return MaterialApp(
+      showSemanticsDebugger: true,
+      debugShowCheckedModeBanner: false,
       theme: AppTheme().getconfig(),
-      title: 'Material App',
+      title: 'Mascotin - Friendly Pet Site',
       home: Scaffold(
-        
         body: SafeArea(
-          child: Center(
-            child: Column
-            (
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('Bienvenido a Mascotin',style: tStyle.bodyLarge,),
-                const Gap(20),
-                const Icon(FontAwesomeIcons.paw, size: 100),
-              ],
-            ),
+          child: Column(
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Gap(10),
+                  const Icon(
+                    FontAwesomeIcons.paw,
+                    size: 60,
+                  ),
+                  const Gap(20),
+                  const Expanded(
+                    child: Text(
+                      'Mascotin',
+                      style: TextStyle(fontSize: 60),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(FontAwesomeIcons.bars),
+                  ),
+                  const Gap(10),
+                ],
+              ),
+            ],
           ),
         ),
       ),

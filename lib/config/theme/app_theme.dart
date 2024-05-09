@@ -14,14 +14,14 @@ class AppTheme {
       onSecondary: Color(0xFF000000),
       error: Color(0xFFB00020),
       onError: Color(0xFFFFFFFF),
-      background: Color.fromRGBO(190, 189, 189, 1),
+      background: Color.fromRGBO(239, 216, 63, 1),
       onBackground: Color(0xFF000000),
       surface: Color(0xFFFFFFFF),
       onSurface: Color(0xFF000000),
       
     ),
     iconTheme: const IconThemeData(
-      color: Color(0xFF03DAC6),
+      color: Color.fromARGB(255, 255, 255, 255),
     ),
     textTheme: TextTheme(
       bodyLarge: GoogleFonts.poppins(
